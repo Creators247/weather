@@ -1,0 +1,154 @@
+#Home {
+  min-width: 100vw;
+  display: flex;
+  max-height: 100vh;
+  justify-content: space-between;
+}
+.Search-container {
+  background: url("https://source.unsplash.com/random");
+  width: 100%;
+  height: 100vh;
+  max-width: 60vw;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.Search-container > .Transparent {
+  display: flex;
+  height: inherit;
+  max-width: inherit;
+  flex-direction: column;
+  padding: 0px 30px 0px 20px;
+  border-top-right-radius: 50px;
+  background-color: #00000070;
+  justify-content: space-between;
+  border-bottom-right-radius: 50px;
+}
+.Transparent > section {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.Transparent h2 {
+  margin: 0;
+  color: white;
+}
+.Transparent .location {
+  gap: 10px;
+  display: flex;
+  color: white;
+  padding: 5px 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  align-items: center;
+  background-color: #00000080;
+}
+.Transparent .location > div {
+  display: flex;
+  font-size: 12px;
+  width: fit-content;
+  align-items: center;
+  flex-direction: column;
+}
+.Transparent .location > div p{
+    color: white;
+}
+.loc-icon {
+  width: 25px;
+  height: 100%;
+  color: white;
+  fill: white;
+}
+hr {
+  width: 30%;
+  height: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+}
+.Transparent > .search {
+  gap: 20px;
+  margin-bottom: 35%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Transparent > .search h1 {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+.Transparent > .search div {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.Transparent > .search input {
+  width: 27vw;
+  height: 33px;
+  border: none;
+  color: gray;
+  padding: 0 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #ffffffd2;
+  font-family: "Poppins", sans-serif;
+}
+.Transparent > .search input::placeholder {
+  color: white;
+}
+.Transparent > .search input::-webkit-search-cancel-button {
+  display: none;
+}
+.Transparent > .search .loc-icon {
+  width: 20px;
+}
+.Transparent > .search button {
+  height: 33px;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #ffffffd2;
+}
+.Transparent > .search button:hover {
+  border-color: transparent;
+}
+.Transparent > .search input:focus {
+  outline: none;
+}
+@media screen and (max-width: 900px) {
+  #Home{
+    flex-direction: column;
+    max-height: 100%;
+    padding-bottom: 50px;
+  }
+  .Search-container{
+    max-width: 100%;
+    height: 400px;
+  }
+  .Search-container > .Transparent{
+    justify-content: flex-start;
+    gap: 30%;
+  }
+  .Transparent > .search{
+    margin-bottom:0 ;
+  }
+  .Transparent > .search input{
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  .Search-container {
+    border-radius: 0;
+  }
+  .Transparent > .search h1{
+    font-size: 25px;
+  }
+  .Search-container > .Transparent {
+    border-radius: 0;
+  }
+}

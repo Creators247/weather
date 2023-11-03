@@ -1,0 +1,177 @@
+.info-container {
+  width: 100%;
+  display: flex;
+  max-width: 40vw;
+  overflow: scroll;
+  max-height: 100vh;
+  padding: 20px 20px;
+  overflow-x: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info-container::-webkit-scrollbar{
+  width: 10px;
+  padding: 10px;
+}
+.info-container::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background-color: gray;
+}
+.info-container::-webkit-scrollbar-corner{
+  display: none;
+}
+.info-container::-webkit-scrollbar-track{
+  display: none;
+}
+.info-container::-webkit-scrollbar-track-piece{
+  display: none;
+}
+.info-container::-webkit-scrollbar-button{
+  display: none;
+}
+.info-container > div {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.info-container > div > h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.info-container > div > h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.info-container > div > .card {
+  gap: 30px;
+  display: flex;
+  align-self: center;
+  padding: 30px 30px;
+  border-radius: 20px;
+  align-items: center;
+  max-width: fit-content;
+  justify-content: flex-end;
+  box-shadow: 2px 2px 10px 3px #80808060;
+}
+.info-container > div > .card >div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info-container > div > .card hr {
+  width: 3px;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.623);
+}
+.info-container > div > .card p {
+  color: rgb(54, 52, 52);
+  margin-bottom: 5px;
+}
+.info-container > div > .card h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.info-container > div > .card h3 {
+  display: flex;
+  align-items: center;
+}
+.info-container > div > .card h2 sup {
+  font-size: 20px;
+  font-weight: 500;
+}
+.info-container > div > .card p sup{
+  font-size:10px ;
+}
+.demi{
+  gap: 30px;
+  display: flex;
+  padding: 10px;
+  overflow: scroll;
+  overflow-y: hidden;
+
+  box-shadow: 15px 0px 5px 0px rgba(105, 104, 104, 0.185);
+}
+.demi::-webkit-scrollbar{
+  height: 5px;
+}
+.demi::-webkit-scrollbar-thumb{
+  background-color: gray;
+  border-radius: 20px;
+}
+.demi::-webkit-scrollbar-corner{
+  display: none;
+}
+.demi::-webkit-scrollbar-track{
+  display: none;
+}
+.demi::-webkit-scrollbar-track-piece{
+  display: none;
+}
+.demi::-webkit-scrollbar-button{
+  display: none;
+}
+.demi-cards{
+  gap: 10px;
+  display: flex;
+  min-width: 200px;
+  align-self: center;
+  padding: 10px 10px;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 10px 3px #80808060;
+}
+.demi-cards  h3{
+  display: flex;
+}
+.demi-cards  h4{
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.demi-cards .Screen{
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .info-container{
+  max-width: 100vw;
+  overflow: hidden;
+  max-height: 100%;
+  gap: 20px;
+  }
+.info-container > div{
+  text-align: center;
+}
+.info-container > div > .card hr{
+  min-height: 50px;
+}
+.demi{
+box-shadow: none;
+}
+.demi-cards{
+  height:fit-content;
+  align-items: center;
+  padding: 20px 20px;
+}
+.demi-cards > div{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-bottom: 2px solid gray;
+}
+.demi-cards .Screen{
+  display: flex;
+  flex-direction: column;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+}
+@media screen and (max-width: 425px) {
+  .info-container > div > .card{
+    gap: 10px;
+    padding: 40px 20px;
+  }
+}
