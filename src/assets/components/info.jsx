@@ -11,7 +11,7 @@ export default function Info(props) {
   // this is me fecthing data from the weatherapi for only one day
     async function getsTodaysWeather (){
    try {
-    let url = `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${location}&aqi=yes`;
+    let url = `https://api.weatherapi.com/v1/current.json?key=${api_key}&q=${location}&aqi=no`;
     let responce = await fetch(url);
     let data = await responce.json();
     todaysWeather = data;
@@ -22,6 +22,9 @@ export default function Info(props) {
     bg.style.backgroundRepeat = 'no-repeat';
     bg.style.backgroundPosition = 'center center';
    } catch (error) {
+    location = 'nigeria'
+    alert('Could not find address');
+    window.location.reload(true);
     location = 'nigeria'
    } 
   }
@@ -92,12 +95,14 @@ export default function Info(props) {
 
   async function getsWeeksWeather ()  {
     try {
-      let url = `http://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${location}&days=7&aqi=yes&alerts=no`;
+      let url = `https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${location}&days=7&aqi=no&alerts=no`;
     let responce = await fetch(url);
     let data = await responce.json();
     weeksWeather = data;
     setWeeksWeather(weeksWeather.forecast.forecastday);
     } catch (error) {
+      console.log('the error' + error);
+      window.location.reload(true);
       location = 'nigeria'
     }
     
