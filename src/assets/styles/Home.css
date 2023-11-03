@@ -127,8 +127,8 @@ hr {
     padding-bottom: 50px;
   }
   .Search-container{
-    max-width: 100%;
-    height: 400px;
+    max-width: 100vw;
+    height: 500px;
   }
   .Search-container > .Transparent{
     justify-content: flex-start;
@@ -143,6 +143,7 @@ hr {
 }
 @media screen and (max-width: 425px) {
   .Search-container {
+    max-width: 100vw;
     border-radius: 0;
   }
   .Transparent > .search h1{
