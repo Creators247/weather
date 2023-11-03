@@ -136,10 +136,11 @@
 }
 @media screen and (max-width: 900px) {
   .info-container{
-  max-width: 100vw;
+  max-width: fit-content;
   overflow: hidden;
   max-height: 100%;
   gap: 20px;
+  align-self: center;
   }
 .info-container > div{
   text-align: center;
