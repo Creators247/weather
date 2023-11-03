@@ -22,7 +22,6 @@ export default function Info(props) {
     bg.style.backgroundRepeat = 'no-repeat';
     bg.style.backgroundPosition = 'center center';
    } catch (error) {
-    window.location.reload(true);
     location = 'nigeria'
    } 
   }
@@ -99,7 +98,6 @@ export default function Info(props) {
     weeksWeather = data;
     setWeeksWeather(weeksWeather.forecast.forecastday);
     } catch (error) {
-      window.location.reload(true);
       location = 'nigeria'
     }
     
