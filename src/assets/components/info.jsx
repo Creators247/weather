@@ -140,10 +140,6 @@ export default function Info(props) {
         );
       });
     }
-    if (window.innerWidth <= 768) { // Adjust the value to your desired screen size
-      // Your code to execute when the screen size is less than or equal to 768 pixels wide
-      alert("Screen size is small.");
-    }
     return (
       <>
         <div className="demi">{DisplayFuc}</div>
