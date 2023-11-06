@@ -23,7 +23,6 @@ export default function Home() {
     }
     function error() {
       navigator.geolocation
-      
     }
     
     navigator.geolocation.getCurrentPosition(success, error);
@@ -97,7 +96,6 @@ export default function Home() {
       </div>
     );
   }
-
   return (
     <>
       <div id="Home">
@@ -114,7 +112,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Info searchLocation={searchLocation} />
+        <Info searchLocation={searchLocation} location={location}/>
       </div>
     </>
   );

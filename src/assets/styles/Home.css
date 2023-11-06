@@ -5,6 +5,7 @@
   justify-content: space-between;
 }
 .Search-container {
+  background: url("../images/home.avif");
   background: url("https://source.unsplash.com/random");
   width: 100%;
   height: 100vh;
@@ -122,13 +123,14 @@ hr {
 }
 @media screen and (max-width: 900px) {
   #Home{
-    flex-direction: column;
+    gap: 20px;
     max-height: 100%;
     padding-bottom: 50px;
+    flex-direction: column;
   }
   .Search-container{
-    max-width: 100vw;
     height: 500px;
+    max-width: 100vw;
   }
   .Search-container > .Transparent{
     justify-content: flex-start;
@@ -149,7 +151,15 @@ hr {
   .Transparent > .search h1{
     font-size: 25px;
   }
+  .Transparent .location{
+    padding: 5px;
+    margin-right: 0;
+  }
   .Search-container > .Transparent {
+    padding: 0 10px;
     border-radius: 0;
+  }.Transparent > section {
+    width: 100%;
+    margin-top: 10px;
   }
 }
